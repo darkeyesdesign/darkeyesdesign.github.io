@@ -6,6 +6,9 @@
   "repository": "https://github.com/darkeyesdesign/darkeyesdesign.github.io.git",
   "author": "billbunkum",
   "license": "MIT",
+  "scripts": {
+    "serve": "live-server ."
+  },
   "dependencies": {
     "live-server": "1.2.1"
   }
