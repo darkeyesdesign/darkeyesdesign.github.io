@@ -1,0 +1,12 @@
+{
+  "name": "iiixi-darkeyes-design",
+  "version": "1.0.0",
+  "description": "pointer site for iiixi",
+  "main": "index.js",
+  "repository": "https://github.com/darkeyesdesign/darkeyesdesign.github.io.git",
+  "author": "billbunkum",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "1.2.1"
+  }
+}
