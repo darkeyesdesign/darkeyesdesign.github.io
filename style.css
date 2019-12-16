@@ -11,9 +11,8 @@ body {
   min-width: 30rem;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
+.bootstrap-form {
+  margin-bottom: 2rem;
 }
 
 .header__image {
@@ -27,9 +26,6 @@ body {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 2rem 2rem 2rem 2rem; 
-}
-
-.links-container {
 }
 
 li {
@@ -60,4 +56,9 @@ a.disabled {
   display: flex;
   justify-content: center;
   padding: 2rem 0 0 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
