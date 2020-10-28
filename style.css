@@ -34,10 +34,10 @@ li {
   margin-bottom: 2rem;
 }
 
-li .youtubeVideo {
+/* li .youtubeVideo {
   display: flex;
   justify-content: center;
-}
+} */
 
 a {
   color: #080B20;
@@ -68,7 +68,31 @@ a.disabled {
   flex-direction: column;
 }
 
+/*LAPTOPS*/
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    li .youtubeVideo {
+      height: 315px;
+      width: 560px;
+    }
+}
 
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    li .youtubeVideo {
+      height: 315px;
+      width: 560px;
+    }
+}
+
+/*iPHONES*/
 /* Portrait */
 @media only screen 
   and (min-device-width: 320px) 
