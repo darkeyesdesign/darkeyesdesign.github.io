@@ -34,6 +34,11 @@ li {
   margin-bottom: 2rem;
 }
 
+li .youtubeVideo {
+  display: flex;
+  justify-content: center;
+}
+
 a {
   color: #080B20;
   font-weight: 300;
@@ -61,4 +66,29 @@ a.disabled {
 .main-content {
   display: flex;
   flex-direction: column;
+}
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    li .youtubeVideo {
+      height: 315px;
+      width: 480px;
+    }
+  }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    li .youtubeVideo {
+      height: 315px;
+      width: 560px;
+    }
 }
