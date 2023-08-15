@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 h2.h2__red {
-  color: purple;
+  color: red;
 }
 
 .bootstrap-form {
@@ -31,9 +31,10 @@ h2.h2__red {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 2rem 2rem 2rem 2rem; 
+  width: auto;
 }
 .header__image {
-  width: 0 auto;
+  width: auto;
 }
 
 li {
