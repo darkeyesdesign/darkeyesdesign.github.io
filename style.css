@@ -11,6 +11,10 @@ body {
   min-width: 30rem;
 }
 
+h1, h2 {
+  color: purple;
+}
+
 h2.h2__red {
   color: purple;
 }
