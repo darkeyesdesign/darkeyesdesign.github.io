@@ -124,8 +124,9 @@ ul.contact_form li a {
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    .main_containr {
+    .main_container {
       width: auto 0;
+			height: 100%;
     }
 }
 
@@ -136,8 +137,6 @@ ul.contact_form li a {
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
     .youtube-video {
-      height: 315px;
-      width: 560px;
     }
 }
 
@@ -149,8 +148,6 @@ ul.contact_form li a {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     .youtube-video {
-      height: 315px;
-      width: 480px;
     }
   }
 
@@ -160,18 +157,8 @@ ul.contact_form li a {
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    .youtube-video {
-      height: 315px;
-      width: 560px;
-    }
-}/*iPHONES*/
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
 		body {
+			width: 100%;
 			width: 100%;
 		}
 		.header {
@@ -180,6 +167,40 @@ ul.contact_form li a {
     .footer_container {
 			position: fixed;
 			width: 100%;
+			padding: 2rem 0rem 2rem 0rem;
+			bottom: 0px;
+		}
+		.content__serving p, .content__inquiries img {
+			padding: 0rem;
+    }
+		.content__inquiries img {
+			padding-bottom: 8rem;
+		}
+		.content__inquiries {
+			padding: 1rem;
+		}
+		.main__title {
+			font-size: 2rem;	
+		}
+}
+/*iPHONES*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+		body {
+			width: 100%;
+			width: 100%;
+		}
+		.header {
+			padding: 2rem 0rem 2rem 0rem;
+		}
+    .footer_container {
+			position: fixed;
+			width: 100%;
+			padding: 2rem 0rem 2rem 0rem;
 			bottom: 0px;
 		}
 		.content__serving p, .content__inquiries img {
@@ -187,6 +208,9 @@ ul.contact_form li a {
     }
 		.content__inquiries {
 			padding: 1rem;
+		}
+		.content__inquiries img {
+			padding-bottom: 8rem;
 		}
 		.main__title {
 			font-size: 2rem;	
