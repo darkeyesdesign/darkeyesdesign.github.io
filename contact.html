@@ -1,29 +1,40 @@
 <!doctype html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" 
+<!-- CONTACT.html -->
+<html>
+	<head>
+		<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" 
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
       crossorigin="anonymous"
-    >
-    <script src="https://kit.fontawesome.com/f6aaf68994.js" crossorigin="anonymous"></script>
+  >
 
-    <link href="/style.css" 
-      rel="stylesheet">
+		<script src="https://kit.fontawesome.com/f6aaf68994.js" crossorigin="anonymous"></script>
 
-    <title>i i i x i</title>
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  	<link href="/style.css" 
+    rel="stylesheet">
+
+  	<title>Darkeyes Bartending</title>
   </head>
+
   <body>
-  <div class="main-content">
-    <img alt="iiixi_logo" 
-      class="header_image" 
-      src="/media/darkeyesdesign_logo.jpg" />
-    
+  <div class="main_container">
+
+  	<div class="main__title">
+			<h1>Darkeyes Bartending</h1>
+		</div>
+
     <div class="header">
-        <small>Contact us for our rates!</small>
     </div>
-    <ul>
+
+    <ul class="contact_form">
       <li class="li__no-decoration">
         <a 
         href="/index.html">
@@ -41,7 +52,7 @@
           <input class="form-control"
             id="formGroupNameInput"
             name="name"
-            placeholder="Your name goes here"
+            placeholder="Name of Contact / Planner"
             required
             type="text">
           </div>
@@ -51,17 +62,27 @@
           <input class="form-control"
             id="formGroupEmailInput" 
             name="_replyto"
-            placeholder="Your email goes here"
+            placeholder="Email of Contact / Planner"
             required
             type="email">
           </div>
 
         <div class="form-group">
-          <label for="formGroupMessageTextarea">Message:</label>
+          <label for="formGroupGuestNumberInput">Number of Guests:</label>
+          <input class="form-control"
+            id="formGroupGuestNumberInput"
+            name="guests"
+            placeholder="Estimated Number of Guests"
+            required
+            type="number" min="0">
+          </div>
+
+        <div class="form-group">
+          <label for="formGroupAdditionalNotesTextarea">Additional Information:</label>
           <textarea class="form-control"
-            id="formGroupMessageTextarea"
-            name="message"
-            placeholder="Your message / question goes here!"
+            id="formGroupAdditionalInfoTextarea"
+            name="info"
+            placeholder="Additional notes about your event"
             required
             rows="5"
           ></textarea>
@@ -70,13 +91,13 @@
           <button class="btn btn-secondary btn-lg"
             type="submit" 
             value="Send">
-              Send
+              SEND
             </button>
         </form>
       </div>
 
     <div class="footer">
-      ©2012-2023 Darkeyes Design
+      ©2012-2024  Darkeyes Design LLC.
       </div>
   </div> <!-- main content -->
   
