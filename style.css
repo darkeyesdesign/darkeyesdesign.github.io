@@ -90,7 +90,7 @@ body {
 				text-align: center;
 				padding: 3rem 10rem 2rem 10rem;	
 			}
-.header, .footer {
+.header, .footer_container {
 	background-color: #20243F; 
 /*	background-color: #78c1c1; *//* TEAL */
 	color: #F9F6EE;
@@ -98,7 +98,7 @@ body {
 	font-family: "Italiana", sans-serif;
 	justify-content: center;
 }
-.footer {
+.footer_container {
   border-top: 0.2rem solid #000000;
   padding: 4rem 0 3rem 0;
 }
@@ -124,9 +124,8 @@ ul.contact_form li a {
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    .youtube-video {
-      height: 315px;
-      width: 560px;
+    .main_containr {
+      width: auto 0;
     }
 }
 
@@ -165,4 +164,42 @@ ul.contact_form li a {
       height: 315px;
       width: 560px;
     }
+}/*iPHONES*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+		body {
+			width: 100%;
+		}
+		.header {
+			padding: 2rem 0rem 2rem 0rem;
+		}
+    .footer_container {
+			position: fixed;
+			width: 100%;
+			bottom: 0px;
+		}
+		.content__serving p, .content__inquiries img {
+			padding: 0rem;
+    }
+		.content__inquiries {
+			padding: 1rem;
+		}
+		.main__title {
+			font-size: 2rem;	
+		}
+  }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .youtube-video {
+    }
 }
+
