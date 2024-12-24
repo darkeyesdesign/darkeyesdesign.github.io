@@ -16,27 +16,14 @@
   font-weight: 100;
   font-style: normal;
 }
-
-/* TAGS */
-h1, h2, h3 {
-	font-family: "Italiana", sans-serif;
-}
 a {
-/*  color: #080B20;*/
-  color: #F9F6EE;
-  font-weight: 300;
+  font-weight: 400;
 	text-decoration: none;
 }
 a:visited {
 }
 a:hover {
 }
-
-/* PAGES */
-html {
-  font-size: 62.5%;
-}
-
 body {
   background-color: #F9F6EE;
 	color: black;
@@ -46,6 +33,22 @@ body {
   margin: 0 auto;
   max-width: 65rem;
   min-width: 30rem;
+}
+h1, h2, h3 {
+	font-family: "Italiana", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+ul {
+	list-style: none;
+}
+ul.contact_form {
+/*	background-color: #20243F; *//* PURPLE */
+	list-style: none;
+}
+ul.contact_form li a {
+	color: black; 
 }
 .main_container {
   display: flex;
@@ -67,18 +70,23 @@ body {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
-		.content__serving, .content__inquiries {
+		.content__whiles, .content__inquiries {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
-		.content__serving {
+		.content__whiles {
 				justify-content: center;
 		}
-			.content__serving p {
+			.content__whiles ul {
+				padding: 0;
 				text-align: center;
-				padding: 4rem 2rem 2rem 1rem;
-				margin: 2rem;
+			}
+			.content__whiles ul li {
+				margin-top: .5em;
+			}
+			.content__whiles ul li a {
+				font-variant-caps: small-caps;
 			}
 		.content__inquiries {
 			justify-content: center;
@@ -114,13 +122,6 @@ body {
   margin-top: 0;
   padding: 2rem 2rem 3rem 2rem; 
   width: auto;
-}
-ul.contact_form {
-/*	background-color: #20243F; *//* PURPLE */
-	list-style: none;
-}
-ul.contact_form li a {
-	color: black; 
 }
 .bootstrap-form {
 	padding: 0rem 0rem 10rem 0rem;
@@ -178,7 +179,7 @@ ul.contact_form li a {
 			padding: 2rem 0rem 2rem 0rem;
 			bottom: 0px;
 		}
-		.content__serving p, .content__inquiries img {
+		.content__whiles p, .content__inquiries img {
 			padding: 0rem;
     }
 		.content__inquiries img {
@@ -205,6 +206,7 @@ ul.contact_form li a {
 		}
 		.header {
 			padding: 2rem 0rem 2rem 0rem;
+			text-align: center;
 		}
     .footer_container {
 			position: fixed;
@@ -212,9 +214,12 @@ ul.contact_form li a {
 			padding: 2rem 0rem 2rem 0rem;
 			bottom: 0px;
 		}
-		.content__serving p, .content__inquiries img {
+		.content__whiles ul, .content__inquiries img {
 			padding: 0rem;
     }
+		.content__whiles ul li {
+			margin-top: 1em;
+		}
 		.content__inquiries {
 			padding: 1rem;
 		}
