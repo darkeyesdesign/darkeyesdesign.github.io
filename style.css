@@ -50,7 +50,7 @@ ul.contact_form {
 ul.contact_form li a {
 	color: black; 
 }
-.main_container {
+.main {
   display: flex;
   flex-direction: column;
 	justify-content: center;
@@ -76,8 +76,9 @@ ul.contact_form li a {
 			flex-wrap: wrap;
 		}
 		.content__whiles {
-				justify-content: center;
+			justify-content: center;
 		}
+
 			.content__whiles ul {
 				padding: 0;
 				text-align: center;
@@ -100,28 +101,30 @@ ul.contact_form li a {
 				text-align: center;
 				padding: 3rem 10rem 2rem 11rem;	
 			}
-
-.header {
+		.whiles__explanation {
+		  border-bottom: 0.2rem solid #000000;
+			padding-bottom: 2em;
+			margin-top: 2em;
+			text-align: center;
+		}
+.main__header {
 	background-color: #20243F; 
 	color: #F9F6EE;
+  margin-top: 0;
+  padding: 2rem 2rem 3rem 2rem; 
+  width: auto;
 }
-.footer_container {
+.main__footer {
 	background-color: #F9F6EE; 
 }
-.header, .footer_container {
-/*	background-color: #78c1c1; *//* TEAL */
+.main__header, .main__footer {
 	display: flex;
 	font-family: "Italiana", sans-serif;
 	justify-content: center;
 }
-.footer_container {
+.main__footer {
   border-top: 0.2rem solid #000000;
   padding: 4rem 0 3rem 0;
-}
-.header {
-  margin-top: 0;
-  padding: 2rem 2rem 3rem 2rem; 
-  width: auto;
 }
 .bootstrap-form {
 	padding: 0rem 0rem 10rem 0rem;
@@ -173,7 +176,7 @@ ul.contact_form li a {
 		.header {
 			padding: 2rem 0rem 2rem 0rem;
 		}
-    .footer_container {
+    .main__footer {
 			position: fixed;
 			width: 100%;
 			padding: 2rem 0rem 2rem 0rem;
@@ -208,7 +211,7 @@ ul.contact_form li a {
 			padding: 2rem 0rem 2rem 0rem;
 			text-align: center;
 		}
-    .footer_container {
+    .main__footer {
 			position: fixed;
 			width: 100%;
 			padding: 2rem 0rem 2rem 0rem;
